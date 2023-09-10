@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import SearchLocationInput from './components/GooglePlacesApi';
+import MapComponent from './components/Map';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [selectedLocation,setSelectedLocation] = useState({
+    lat:28.7041,
+    lng:77.1025,
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <SearchLocationInput/>
+      <MapComponent selectedLocation={selectedLocation}/>
     </div>
   );
 }
