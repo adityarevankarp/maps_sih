@@ -28,6 +28,7 @@ const SearchLocationInput = ({setSelectedLocation}) => {
         autoComplete = new window.google.maps.places.Autocomplete(
             autoCompleteRef.current,
             {
+                types:["(cities)"],
                 componentRestrictions: {country:'IN'}
             }
         )
