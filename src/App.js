@@ -12,7 +12,7 @@ function App() {
   return (
 
     <div>
-      <SearchLocationInput/>
+      <SearchLocationInput setSelectedLocation={setSelectedLocation}/>
       <MapComponent selectedLocation={selectedLocation}/>
     </div>
   );

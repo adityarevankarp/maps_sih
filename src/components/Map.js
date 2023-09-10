@@ -23,7 +23,8 @@ const MapComponent = ({selectedLocation}) =>{
           zoom={13}
           onLoad={onMapLoad}
         >
-          
+            <MarkerF position={selectedLocation}
+            icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}/>
         </GoogleMap>
       </div>
     )
