@@ -1,3 +1,6 @@
+![image](https://github.com/adityarevankarp/maps_sih/assets/57789526/95a16d20-6989-4ab3-ac8e-f94cfc8ab2b1)
+
+npm i @react-google-maps/api
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
