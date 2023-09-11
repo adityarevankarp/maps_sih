@@ -7,8 +7,7 @@
 //         navigator.geolocation.getCurrentPosition((position)=>{
 //             setLatitude(position.coords.latitude);
 //             setLongitude(position.coords.longitude);
-//             console.log(latitude);
-//             console.log(longitude);
+
 //         })
 //     },[latitude, longitude])
 //   return (
@@ -31,7 +30,7 @@ export default function GetUserLocation({ onLocationChange }) {
 
   return (
     <div>
-      {/* You can render any additional UI related to location here */}
+      
     </div>
   );
 }
