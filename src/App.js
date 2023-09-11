@@ -1,7 +1,8 @@
 import SearchLocationInput from './components/GooglePlacesApi';
 import MapComponent from './components/Map';
 import './App.css';
-import { useState } from 'react';
+import React,{ useState } from 'react';
+import GetUserLocation from './components/GetUserLocation';
 
 function App() {
 
@@ -9,11 +10,23 @@ function App() {
     lat:28.7041,
     lng:77.1025,
   });
+
+  const updateLocation = (lat, lng) => {
+    setSelectedLocation({
+      lat:lat, // Update latitude
+      lng:lng, // Update longitude
+    });
+  };
+  
+
   return (
 
     <div>
       <SearchLocationInput setSelectedLocation={setSelectedLocation}/>
       <MapComponent selectedLocation={selectedLocation}/>
+      <GetUserLocation onLocationChange={updateLocation} />
+
+
     </div>
   );
 }
